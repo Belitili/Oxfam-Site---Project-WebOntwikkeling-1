@@ -1,0 +1,639 @@
+/*general*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    border: 1px dashed darkblue;
+}
+
+.grad {
+    background: #097b0e;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgba(9, 123, 14, 0.5), rgba(50, 164, 229, 0.5));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(9, 123, 14, 0.5), rgba(50, 164, 229, 0.5));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(9, 123, 14, 0.5), rgba(50, 164, 229, 0.5));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(9, 123, 14, 0.5), rgba(50, 164, 229, 0.5));
+    /* Standard syntax */
+}
+
+p {
+    padding-bottom: 5px;
+}
+
+#UrenAlt {
+    display: none;
+}
+
+img {
+    padding: 5px;
+}
+
+table {
+    text-align: right;
+    margin: 5px;
+}
+
+th {
+    text-align: left;
+    padding-right: 5px;
+}
+
+
+/*siteHeader*/
+
+#siteHeader {
+    width: 100%;
+    padding: 20px 0;
+}
+
+#siteHeader h1 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    background-image: url(../img/logo_heverlee.png);
+    background-repeat: no-repeat;
+    /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 55px;
+    background-position: center;
+}
+
+#siteHeader h1 a {
+    display: block;
+    height: 55px;
+}
+
+#siteHeader h1 a:hover {
+    display: block;
+    height: 55px;
+    background-color: rgba(0, 164, 229, 0.3);
+}
+
+#siteHeader nav {
+    box-sizing: border-box;
+    width: 70%;
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+#siteHeader #fb_icon {
+    display: inline-block;
+}
+
+#menu {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#siteHeader nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+#siteHeader nav ul li {
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 5px;
+}
+
+#siteHeader nav ul li a {
+    display: block;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    color: #000080;
+    font-weight: bold;
+    font-size: 130%
+}
+
+#siteHeader nav ul li a:hover {
+    display: block;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 164, 229, 0.3);
+}
+
+#lang {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(37, 34, 34);
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    font-weight: bold;
+}
+
+#siteHeader {
+    transform: skewY(-1.5deg);
+    transform-origin: 0%;
+}
+
+
+/*floatingFooter*/
+
+#floatingFooter {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    border-radius: 40px 40px 0 0;
+}
+
+#floatingFooter section {
+    padding: 10px 0;
+}
+
+#Openingsuren div {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+}
+
+#floatingFooter h4 {
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+#floatingFooter {
+    color: rgb(37, 34, 34);
+}
+
+
+/*bottomFooter*/
+
+#bottomFooter,
+#floatingFooter {
+    padding: 1.5rem 2rem;
+}
+
+#bottomFooter {
+    background: #252222;
+    color: white;
+}
+
+#bottomFooter p:first-child {
+    float: left;
+    padding-bottom: 3px;
+}
+
+#bottomFooter p:last-child {
+    float: right;
+    padding-bottom: 3px;
+}
+
+
+/*Small screens*/
+
+@media screen and (max-width:700px) {
+    #siteHeader h1 {
+        display: block;
+        width: 100%;
+    }
+    #siteHeader nav {
+        width: 100%;
+    }
+    #siteHeader nav ul {
+        display: block;
+    }
+    #siteHeader nav ul li a {
+        display: block;
+        height: auto;
+    }
+    #siteHeader nav ul li a:hover {
+        display: block;
+        height: auto;
+        align-items: center;
+        background-color: rgba(0, 164, 229, 0.3);
+    }
+    #siteHeader #fb_icon {
+        display: block;
+    }
+    #floatingFooter {
+        display: inline;
+        padding-bottom: 40px;
+    }
+    #Openingsuren div {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+    }
+}
+
+
+/*half screen*/
+
+@media screen and (max-width:1000px) {
+    #Facebook {
+        display: none;
+    }
+}
+
+
+/*index*/
+
+main#index article,
+main#OnzeMissie {
+    background-color: rgba(104, 202, 108, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main#index h2,
+main#OnzeMissie h2 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 140%
+}
+
+main aside h3 {
+    color: #1A3326;
+    padding-bottom: 5px;
+    font-size: 120%
+}
+
+article#Missie p {
+    padding-right: 10px;
+}
+
+article#Missie p a {
+    text-decoration: underline;
+}
+
+main#index aside article {
+    background-color: rgba(50, 164, 229, 0.3);
+}
+
+.bestelKnop h3 a {
+    display: block;
+    border: 3px solid #000080;
+    padding: 2px;
+    margin: 20px;
+    font-size: 150%;
+    text-align: center;
+    color: #000080;
+}
+
+@media screen and (min-width: 480px) {
+    article#Missie > div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main#index {
+        display: flex;
+        width: 100%;
+    }
+    main#index > div {
+        box-sizing: border-box;
+        width: 65%;
+    }
+    main#index aside {
+        box-sizing: border-box;
+        width: 32%;
+    }
+    #Producten div {
+        display: flex;
+    }
+    #Producten img {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}
+
+#Recepten div {
+    display: flex;
+}
+
+#Recepten img {
+    height: 200px;
+}
+
+
+/*onze missie*/
+
+main#OnzeMissie {
+    background-color: rgba(104, 202, 108, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main#OnzeMissie h2 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 140%
+}
+
+main#OnzeMissie h3 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 120%;
+    text-align: center;
+}
+
+main#OnzeMissie iframe {
+    display: block;
+    margin: 10px auto;
+}
+
+main#OnzeMissie div {
+    display: block;
+    border: 3px solid #000080;
+    padding: 2px;
+    margin: 20px;
+    font-size: 150%;
+    text-align: center;
+    color: #000080;
+}
+
+main#OnzeMissie p {
+    margin-bottom: 5px;
+}
+
+
+/*onze winkel*/
+
+#OnzeWinkel article {
+    background-color: rgba(104, 202, 108, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#OnzeWinkel h2 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 140%
+}
+
+#OnzeWinkel p {
+    margin-bottom: 5px;
+}
+
+#OnzeWinkel p a {
+    text-decoration: underline;
+}
+
+#OnzeWinkel article > div {
+    display: flex;
+}
+
+#OnzeWinkel article img {
+    min-width: 220px;
+}
+
+#OnzeWinkel section#Uren {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    #OnzeWinkel article > div {
+        display: block;
+    }
+}
+
+
+/*producten*/
+
+main#Producten {
+    background-color: rgba(104, 202, 108, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main#Producten h2 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 140%
+}
+
+main#Producten p {
+    padding: 0 15px 5px 0;
+}
+
+main#Producten > div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+main#Producten img {
+    align-self: center;
+}
+
+main#Producten > div h3 a {
+    display: block;
+    border: 3px solid #000080;
+    padding: 2px;
+    font-size: 150%;
+    text-align: center;
+    color: #000080;
+}
+
+@media screen and (max-width: 550px) {
+    main#Producten > div {
+        display: block;
+    }
+    main#Producten img {
+        margin-bottom: 5px;
+    }
+}
+
+
+/*Recepten*/
+
+main#Recepten article {
+    background-color: rgba(104, 202, 108, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#receptenNav {
+    background-color: rgba(50, 164, 229, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+main#Recepten h2 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 140%
+}
+
+main#Recepten h3 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 120%
+}
+
+main#Recepten h4 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 100%
+}
+
+main#Recepten p {
+    margin-bottom: 5px;
+}
+
+main#Recepten p a {
+    text-decoration: underline;
+}
+
+main#Recepten img {
+    float: right;
+    max-height: 175px;
+}
+
+main#Recepten .tijdsduur {
+    float: right;
+    margin-right: 10px;
+}
+
+main#Recepten .footnote {
+    font-size: 80%;
+    margin-top: 5px;
+}
+
+main#Recepten ul li {
+    margin-left: 20px;
+}
+
+
+/*voor verenigingen*/
+
+main#VoorVerenigingen {
+    background-color: rgba(104, 202, 108, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main#VoorVerenigingen h2 {
+    color: #000080;
+    padding-bottom: 5px;
+    font-size: 140%
+}
+
+main#VoorVerenigingen p {
+    padding-bottom: 5px;
+}
+
+main#VoorVerenigingen blockquote {
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+main#VoorVerenigingen .bestelKnop a {
+    display: block;
+    border: 3px solid #000080;
+    padding: 2px;
+    margin: 20px;
+    font-size: 150%;
+    text-align: center;
+    color: #000080;
+}
+
+main#VoorVerenigingen > div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main#VoorVerenigingen img {
+    align-self: center;
+    height: 150px;
+    margin: 0 10px 5px 0;
+}
+
+@media screen and (max-width: 550px) {
+    main#VoorVerenigingen > div {
+        display: block;
+    }
+}
+
+
+/*form*/
+
+#form {
+    background-color: rgba(104, 202, 108, 0.6);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 300px;
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+}
+
+#form h2 {
+    color: #000080;
+    font-size: 140%;
+    padding-bottom: 5px;
+}
+
+#formulier p {
+    display: table-row;
+}
+
+#formulier label {
+    display: table-cell;
+}
+
+#formulier input {
+    margin: 5px 0;
+    display: table-cell;
+}
+
+#formulier input:valid {
+    background-color: greenyellow;
+}
+
+.verplicht-bericht {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    #form {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+    }
+    #floatingFooter {
+        display: none;
+    }
+    #UrenAlt {
+        display: block;
+        border: 3px solid #000080;
+        border-radius: 10px;
+        text-align: center;
+        margin: 20px 20px 20px 20px;
+        padding: 5px 0 5px 0;
+    }
+    #UrenAlt table {
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    #UrenAlt h3 {
+        color: #000080;
+        font-size: 120%;
+        padding-bottom: 5px;
+    }
+}
